@@ -1,0 +1,19 @@
+﻿<Window x:Class="RegexUtility.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="600" Width="800">
+    <Grid>
+        <TextBox x:Name="tbPatron" HorizontalAlignment="Left" Height="23" Margin="193,16,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="448"/>
+        <Label Content="Patron" HorizontalAlignment="Left" Margin="40,13,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.342,-0.154" Width="135"/>
+        <Label Content=" Archivo de Contenido" HorizontalAlignment="Left" Margin="40,44,0,0" VerticalAlignment="Top" Width="135"/>
+        <TextBox x:Name="tbArchivoContenido" HorizontalAlignment="Left" Height="51" Margin="193,47,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="448"/>
+        <Button x:Name="btnCargar" Content="Cargar" HorizontalAlignment="Left" Margin="660,63,0,0" VerticalAlignment="Top" Width="75" Click="btnCargar_Click"/>
+        <Button x:Name="btnProcesar" Content="Procesar" HorizontalAlignment="Left" Margin="364,114,0,0" VerticalAlignment="Top" Width="75" Click="btnProcesar_Click"/>
+        <StatusBar HorizontalAlignment="Left" Height="33" Margin="0,536,0,0" VerticalAlignment="Top" Width="792">
+            <Label x:Name="lbEncontrados" Content="Encontrados" Width="252"/>
+        </StatusBar>
+        <CheckBox x:Name="cbMultilinea" Content="Multilinea" HorizontalAlignment="Left" Margin="660,24,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.099,-0.4"/>
+        <TextBox x:Name="tbResultado" HorizontalAlignment="Left" Height="382" Margin="55,149,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="677"/>
+
+    </Grid>
+</Window>
